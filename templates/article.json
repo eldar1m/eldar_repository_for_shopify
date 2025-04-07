@@ -15,6 +15,10 @@
         "title": {
           "type": "article_title",
           "settings": {}
+        },
+        "author": {
+          "type": "article_author",
+          "settings": {}
         }
       },
       "block_order": [
