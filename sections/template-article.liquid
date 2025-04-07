@@ -12,9 +12,13 @@
         </div>
     
     {% when 'article_author' %}
-      {% if section.settings.enable_author %}
-          <small>{{ article.author }}</small>
-      {% endif %}
+      <div class="flex items-center justify-center">
+          <div class="max-w-7xl text-center">
+            {% if section.settings.enable_author %}
+                <small>{{ article.author }}</small>
+            {% endif %}
+        </div>
+      </div>
     
     {% when 'article_published_date' %}
       {% if section.settings.enable_published_date %}
