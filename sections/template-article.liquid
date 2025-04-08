@@ -46,7 +46,13 @@
 </article>
 
 {% if blog.comments_enabled? %}
-  Hello word
+  <div id="comments" class="my-8">
+    {% if article.comments_count > 0 %}
+
+    {% else %}
+      There are no comments in this article
+    {% endif %}
+  </div>
 {% endif %}
 
 {% schema %}
