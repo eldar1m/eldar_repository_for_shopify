@@ -45,7 +45,9 @@
     {% endfor %}
 </article>
 
-
+{% if blog.comments_enabled? %}
+  Hello word
+{% endif %}
 
 {% schema %}
 {
