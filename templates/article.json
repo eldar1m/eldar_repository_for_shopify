@@ -19,8 +19,16 @@
                     "type": "article_content"
                 }
             },
-            "block_order": ["thumbnail","title","published_date","author","content"]
+            "block_order": [
+                "thumbnail",
+                "title",
+                "published_date",
+                "author",
+                "content"
+            ]
         }
     },
-    "order": ["template"]
+    "order": [
+        "template"
+    ]
 }
