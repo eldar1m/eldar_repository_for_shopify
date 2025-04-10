@@ -80,11 +80,12 @@
                 Update
               </button>
             </div>
+
             <div class="my-2">
               <button
                 type="submit"
                 name="checkout"
-                class="w-full p-3 border border-gray-600 bg-gray-600 text-white font-medium"
+                class="w-full p-3 border border-gray-600 font-medium bg-gray-600 text-white"
               >
                 Checkout
               </button>
@@ -109,3 +110,26 @@
     </div>
   </div>
 {% endif %}
+
+{% schema %}
+{
+  "name": "Template Cart",
+  "blocks": [
+    {
+      "type": "subtotal",
+      "name": "Subtotal",
+      "limit": 1
+    },
+    {
+      "type": "update_button",
+      "name": "Update Button",
+      "limit": 1
+    },
+    {
+      "type": "checkout_button",
+      "name": "Checkout Button",
+      "limit": 1
+    }
+  ]
+}
+{% endschema %}
